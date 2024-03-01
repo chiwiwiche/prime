@@ -6,12 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>PRIME Pro Extreme</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slide.css">
   <script src="https://kit.fontawesome.com/1a99deddcf.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
+  <header class="header">
+    <div class="logo">
+  <!---->            <img src="media/logo-prime-preto.svg" alt="Prime Professional Logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">EQUIPO</a></li>
+            <li><a href="#">SOMOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>            
+    </nav>
+    <!-- <a class="btn" href="#"><button>CONTACT</button></a> -->
+
+  <a onclick="openNav()" class="menu" href="#"><button><i class="fa-solid fa-bars"></i></button></a>
+
+    <div id="mobile-menu" class="overlay">
+      <a onclick="closeNav()" href="" class="close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="overlay-content">
+          <a href="#">INICIO</a>
+          <a href="#">EQUIPO</a>
+          <a href="#">SOMOS</a>
+          <a href="#">CONTACTO</a>
+        </div>
+    </div>
+  </header>
+  <!-- <div class="toto">
+    <img src="media/slide-background.png" alt="" srcset="">
+  </div> -->
+
+
+
+
+  <div class="slider">
+    <div class="slide current">
+        <div class="slide__content-wrapper">
+           <p class="slide__content-slogan">Moving Forward, Together</p>
+           <p class="slide__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fugit nisi placeat ipsam tempora atque reprehenderit. Necessitatibus nam voluptate, molestias esse, culpa sequi consequatur vero corporis commodi nostrum dolorum exercitationem.</p>
+           <a href="#" class="slide__content-link">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide__content-wrapper">
+        <p class="slide__content-slogan">1 mile at a time</p>
+        <p class="slide__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fugit nisi placeat ipsam tempora atque reprehenderit.</p>
+        <a href="#" class="slide__content-link">Call Us</a>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide__content-wrapper">
+        <p class="slide__content-slogan">On Time, Every Time</p>
+        <p class="slide__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quas ut soluta reiciendis, ipsa eum modi. Nesciunt non ab sed corrupti amet, maxime atque incidunt.</p>
+        <a href="#" class="slide__content-link">About Us</a>
+      </div>
+    </div>
+    <!-- <div class="slide">
+      <div class="slide__content-wrapper">
+        <p class="slide__content-slogan">follow us</p>
+        <div class="slide__social-wrapper">
+          <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></i> Whatsapp</a>
+        </div>
+      </div>
+    </div> -->
+    
+</div>
+
+<div class="buttons">
+  <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+  <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<script src="scripts/nav.js"></script>
+<script src="scripts/slide.js"></script>
 </body>
 
 </html>
