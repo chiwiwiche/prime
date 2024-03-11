@@ -1,0 +1,143 @@
+body {
+  /* display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, #031A9A, #8B53FF); */
+}
+.wrapper {
+  /* max-width: 1100px; */
+  width: 100%;
+  position: relative;
+  /* background: green; */
+  
+  padding: 0 3rem;
+
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  margin: 0 2rem;
+  
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: 0;
+}
+.wrapper i:last-child{
+  right: 0;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+  /* border-radius: 8px; */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* background: red; */
+  padding: 1rem 0;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  /* height: 342px; */
+  list-style: none;
+  /* background: red; */
+  /* background:  #8DA3a6; */
+  /* background:  #91c2ba; */
+  background: #e2e2e2;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border-radius: 4px; */
+  border-radius: var(--borders);
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.carousel .card .img {
+  background: white;
+  height: 400px;
+  width: 100%;
+  border-radius: var(--borders);
+  padding: 1rem;
+  
+}
+.card .img img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  object-fit: contain;
+  /* border: 4px solid #6A6D78; */
+  /* border: 4px solid #80176e; */
+  display: block;
+  padding: 1rem;
+  background: rgb(238, 238, 238);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.carousel .card h2 {
+  /* font-weight: 700; */
+  /* font-size: 1.56rem; */
+  margin-top: 1rem;
+  /* color: #0CB7F2; */
+  font-family: var(--ff-titles);
+  font-size: var( --fs-highlights);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.carousel .card h3 {
+    color: #636363;
+    font-family: var(--ff-text);
+}
+.carousel .card span {
+  color: var(--rojo-prime);
+  font-size: 2rem;
+}
+
+/* @media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+} */

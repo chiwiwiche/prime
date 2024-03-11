@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700;800&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Roboto:wght@400;700&display=swap');
 
 :root {
 
   --rojo-prime:#bf0811;
   --negro-prime: #0c0c0c;
-  --Snow-white: #FFFAFA;
+  --snow-white: #FFFAFA;
 
   --ff-titles: "Almarai", sans-serif;
   /* --ff-sub-titles: 'Biryani', sans-serif; */
@@ -19,7 +19,7 @@
 
   --fs-xl: clamp(3rem, 4vw + 1rem, 10rem);
   --fs-xs: clamp(2rem, 2vw + 2rem, 6rem);
-  --fs-tittles: 2rem;
+  --fs-titles: 2rem;
   --fs-sub-tittles: 1.6rem;
   --fs-highlights: 1.2rem;
   --fs-text: 1.1rem;
@@ -73,22 +73,19 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+/* input[type=number] {
   -moz-appearance: textfield;
-}
+} */
 
 /******************************************DEFAULTS*********************************************/
 /***********************************************************************************************/
 body,
 html {
-  background: var(--main-white);
+  background: var(--snow-white);
   margin: 0;
   overflow-x: hidden;
   padding: 0;
-  color: var(--main-white);
 }
-
-
 h1,
 h2,
 h3,
@@ -100,10 +97,21 @@ h6 {
 
 
 
-/*******************************************MEDIA QUERIES*******************************************/
+/*******************************************MEDIAQUERIES*******************************************/
+/* .hithere {
+  animation: hithere 1s ease infinite;
+} */
+@keyframes hithere {
+  30% { transform: scale(1.1); }
+  40%, 60% { transform: rotate(-5deg) scale(1.1); }
+  50% { transform: rotate(5deg) scale(1.1); }
+  70% { transform: rotate(0deg) scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/**************************************************************************************************/
 
 @media (max-width: 1483px) {
-
 
 }
 
@@ -111,69 +119,31 @@ h6 {
 
 }
 
-@media (max-width: 1150px) {/*3rem padding*/
+@media (max-width: 1150px) {
 
 }
 
-@media (max-width: 950px) {
-
-/*********NAV**********/
-  .nav-links, .btn {
-    display: none;
-  }
-  .menu {
-      display: inherit;
-  }
-
-
+@media (max-width: 950px) {/*2 REM padding*/
 
 }
 
-@media (max-width: 768px) {/*1rem padding*/
-  /**********NAVBAR***********/
-    .header{
-      padding: 3rem 1rem;
-    }
-
-
-
+@media (max-width: 768px) {
 
 }
 
-@media (max-width: 576px) { /*1rem padding INSIDE*/
+@media (max-width: 576px) { /*1 REM padding*/
 
-
-   
 }
 
 @media (max-width: 480px) {
-  /***********INTRO*************/
-  .header .logo img{
-    height: 40px;
-  }
-  /* .header .overlay a{
-    font-size: 20px;
-  }
-  .header .overlay .close{
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-  } */
 
 }
 
 @media (max-width: 455px) {
-  /***********INTRO*************/
-  .header .logo img{
-    height: 30px;
-  }
 
-
-  
 }
 
 @media (max-width: 350px) {
-  
 
 }
 

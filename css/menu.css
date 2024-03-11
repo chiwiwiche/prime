@@ -1,20 +1,15 @@
-
-
-
 .header{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 3rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: all 1s;
-  position: relative;
-
-  
+  position: relative;  
+  z-index: 9;
 }
 .header .logo{
   cursor: pointer;
-  margin-right: auto;
 }
 .header .logo img{
   height: 50px;
@@ -24,12 +19,14 @@
 .header .logo img:hover{
   transform: scale(1.1);
 }
+nav{
+  width: 45%;
+}
 .header .nav-links{
   list-style: none;
-}
-.header .nav-links li{
-  display: inline-block;
-  padding: 0 20px;    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .header .nav-links li:hover, .overlay a:hover{
   transform: scale(1.1);
@@ -48,7 +45,7 @@
 .menu {
   display:none;
 }
-.header .btn button, .header .menu button{
+.header .menu button{
   margin-left: 20px;
   padding: 0.6rem 1.5rem;
   background: var(--rojo-prime);
@@ -56,14 +53,9 @@
   border-radius: var(--borders);
   cursor: pointer;
   transition: all 0.3s ease;
-  color: var(--Snow-white);
+  color: var(--snow-white);
 }
-
-
 /*Nav Mobile*/
-.header a{
-  text-decoration: none;  
-}
 .header .overlay {
   height: 100%;
   width: 0;
@@ -85,7 +77,7 @@
 .header .overlay a{
   transition: all 0.3s ease 0s;
   font-weight: var(--almarai700);
-  color: var(--Snow-white);
+  color: var(--snow-white);
   font-family: var(--ff-titles);
   font-size: 1rem;
   letter-spacing: 2px;
@@ -100,3 +92,57 @@
   right: 1rem;
   font-size: 3rem;
 }
+
+/**************************************************************************************************/
+
+@media (max-width: 1483px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 950px) {/*2 REM padding*/
+  .header{
+    padding: 3rem 2rem;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+      display: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 576px) { /*1 REM padding*/
+  .header{
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .header .logo img{
+    height: 45px;
+  }
+
+}
+
+@media (max-width: 455px) {
+
+}
+
+@media (max-width: 350px) {
+  .header .logo img{
+    height: 40px;
+  }
+}
+
+/**************************************************************************************************/

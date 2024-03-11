@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/squares.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/testimonials.css">
   <script src="https://kit.fontawesome.com/1a99deddcf.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,108 +19,355 @@
 <body>
   <header class="header">
     <div class="logo">
-  <!---->            <img src="media/logo-prime-preto.svg" alt="Prime Professional Logo">
+      <img src="media/logo-prime-preto.svg" alt="Prime Professional Logo">
     </div>
     <nav>
         <ul class="nav-links">
             <li><a href="#">INICIO</a></li>
-            <li><a href="#">EQUIPO</a></li>
+            <li><a href="#">PRODUCTOS</a></li>
             <li><a href="#">SOMOS</a></li>
             <li><a href="#">CONTACTO</a></li>
         </ul>            
     </nav>
-    <!-- <a class="btn" href="#"><button>CONTACT</button></a> -->
 
-  <a onclick="openNav()" class="menu" href="#"><button><i class="fa-solid fa-bars"></i></button></a>
+    <a onclick="openNav()" class="menu"><button><i class="fa-solid fa-bars"></i></button></a>
 
     <div id="mobile-menu" class="overlay">
-      <a onclick="closeNav()" href="" class="close"><i class="fa-solid fa-xmark"></i></a>
+        <a onclick="closeNav()" href="" class="close"><i class="fa-solid fa-xmark"></i></a>
+
         <div class="overlay-content">
           <a href="#">INICIO</a>
-          <a href="#">EQUIPO</a>
+          <a href="#">PRODUCTOS</a>
           <a href="#">SOMOS</a>
           <a href="#">CONTACTO</a>
         </div>
+
     </div>
   </header>
 
 
+  <div class="slider__wrapper">
 
+    <div class="slider">
 
+      <div class="slide current">
+          <div class="slide__content-wrapper">
 
-  <div class="slider">
+            <div class="slide__leftSide">
+              <div class="slide__leftSide-info">
+                <div class="slide__leftSide-infoBackground">
+                  <h2>Polvo Decolorante</h2>
+                  <p>Con un alto rendimiento para los servicios de decoloración, Prime Pro Extreme ha desarrollado las innovadoras técnicas de post blanqueamiento, Rubio Platino y Multi, con el poder de aclarar hasta 10 tonos, evitando los tonos anaranjados y amarillos.</p>
+                  <a href="#">CONTACTANOS</a>
+                </div>
+              </div>
+            </div>
 
-    <div class="slide current">
+            <div class="slide__rightSide">
+              <img src="media/products/produto-Po20201.webp" alt="" srcset="" class="slide__rightSide-img">
+            </div>
 
+          </div>
+      </div>
+
+      <div class="slide">
         <div class="slide__content-wrapper">
           
           <div class="slide__leftSide">
             <div class="slide__leftSide-info">
               <div class="slide__leftSide-infoBackground">
-                <h2>BIO TANIX RESTORING</h2>
-                <!-- <div class="slide__title-underLine"></div> -->
-                <p>Bio Tanix Restoring fue desarrollado con el propósito de recuperar, nutrir, sellar las cutículas y revitalizar el cabello dañado y debilitado. El sistema cuenta con 5 soluciones exclusivas.</p>
-                <a href="#">CONTACTANOS</a>
+                <h2>Coloración</h2>
+                <p>Prime Pro Extreme innova una vez más y amplía sus posibilidades para crear un universo de colores y efectos. Hemos desarrollado una coloración Premium exclusiva para nuestra cartera Profit Of Color®</p>
+                <a href="#">SÍGUENOS</a>
               </div>
             </div>
           </div>
 
           <div class="slide__rightSide">
-            <img src="media/slide/producto-1.png" alt="" srcset="" class="slide__rightSide-img">
+            <img src="media/products/profit-coloracao2.webp" alt="" srcset="" class="slide__rightSide-img">
           </div>
 
         </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__content-wrapper">
+
+          <div class="slide__leftSide">
+            <div class="slide__leftSide-info">
+              <div class="slide__leftSide-infoBackground">
+                <h2>Repair Mask</h2>
+                <p>Ofrece un complejo exclusivo de nutrientes, aminoácidos y una mezcla de aceites nobles. Su acción rellena la fibra capilar con masa de reposición de bajo peso molecular, permite la recuperación completa de los cabellos dañados por agresiones químicas y mecánicas.</p>
+                <a href="#">ESCRÍBENOS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide__rightSide">
+              <img src="media/products/biotanix-novoRepairMask1.webp" alt="" srcset="" class="slide__rightSide-img">
+          </div>
+
+        </div>
+      </div>
 
     </div>
 
-    <div class="slide">
+  <div class="buttons">
+    <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
 
-      <div class="slide__content-wrapper">
-        
-        <div class="slide__leftSide">
-          <div class="slide__leftSide-info">
-            <div class="slide__leftSide-infoBackground">
-              <h2>BIO TANIX EXTREME</h2>
-              <p>Con una fórmula exclusiva llamada FORCE-PLASTIA, la línea BIO TANIX EXTREME suaviza incluso el cabello más rebelde, reduce el volumen y elimina el frizz en una sola aplicación sin amarillear el cabello claro como ocurre en los procedimientos de decoloración.</p>
-              <a href="#">SÍGUENOS</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="slide__rightSide">
-          <img src="media/slide/producto-2.png" alt="" srcset="" class="slide__rightSide-img">
-        </div>
 
-      </div>
+<div class="squaresOne__wrapper">
+  
+  <div class="squaresOne__container">
+    
+    <div class="squaresOne__leftSide">
+      <img src="media/products/produto-biotanixextreme1EN.webp" alt="" srcset="" class="squaresOne__leftSide-img">
     </div>
 
-    <div class="slide">
+    <div class="squaresOne__rightSide">
+      <h2>Bio Tanix Extreme Pro</h2>
+      <p>Con su exclusiva fórmula FORCE-PLASTIA, BIO TANIX EXTREME alisa incluso los cabellos más resistentes, reduce el volumen y elimina el encrespamiento desde la primera aplicación sin amarillear los cabellos más claros y decolorados.</p>
+      <a href="#">INFORMACIÓN<i class="fa-solid fa-plus"></i></a>
 
-      <div class="slide__content-wrapper">
-
-        <div class="slide__leftSide">
-          <div class="slide__leftSide-info">
-            <div class="slide__leftSide-infoBackground">
-              <h2>REPAIR MASK</h2>
-              <p>Ofrece un complejo exclusivo de nutrientes, aminoácidos y una mezcla de aceites nobles. Su acción llena la fibra capilar con una masa de reemplazo de bajo peso molecular, permitiendo la recuperación completa del cabello dañado por daños químicos y mecánicos.</p>
-              <a href="#">ESCRÍBENOS</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="slide__rightSide">
-            <img src="media/slide/producto-3.png" alt="" srcset="" class="slide__rightSide-img">
-        </div>
-
-      </div>
     </div>
 
   </div>
 
-<div class="buttons">
-  <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
-  <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
 </div>
+
+<div class="squaresTwo__wrapper">
+  
+  <div class="squaresTwo__container">
+    
+    <div class="squaresTwo__leftSide">
+      <img src="media/products/thermal.webp" alt="" srcset="" class="squaresTwo__leftSide-img">
+    </div>
+
+    <div class="squaresTwo__rightSide">
+      <h2>Thermal Complex Pro</h2>
+      <p>Thermal Complex está indicado para tratar cabellos con frizz, voluminosos, opacos, sin brillo y con cutículas debilitadas debido a procesos químicos o mecánicos o al desgaste natural, y cabellos envejecidos prematuramente por falta de nutrientes esenciales.</p>
+      <a href="#">INFORMACIÓN<i class="fa-solid fa-plus"></i></a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="sliderTwo__wrapper">
+
+  <div class="buttonsTwo">
+    <button id="prevTwo" class="buttonn"><i class="fa-solid fa-chevron-left"></i></button>
+
+  </div>
+
+<div class="sliderTwo">
+
+  <div class="slideTwo currentTwo">
+    
+
+    <div class="slideTwo__content-wrapper">
+
+      <div class="slideTwo__leftSide">
+
+        <div class="slideTwo__leftSide-tittle">
+          <img src="media/testimonials/person-5.png" alt="">
+        </div>
+        
+        <div class="slideTwo__leftSide-info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, hic rem unde iusto labore, qui laudantium explicabo voluptatum ab laborum dolore non possimus doloremque culpa veritatis? Quas voluptas tempore eos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          <br>
+          <p class="slideTwo__leftSide-name">- Lorena Castro -</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slideTwo">
+
+    <div class="slideTwo__content-wrapper">
+
+      <div class="slideTwo__leftSide">
+
+        <div class="slideTwo__leftSide-tittle">
+          <img src="media/testimonials/person-2.png" alt="">
+        </div>
+        
+        <div class="slideTwo__leftSide-info">
+          <p>Consectetur adipisicing elit. Officiis, odit obcaecati similique commodi doloribus excepturi qui velit nam soluta. Minima adipisci, non ducimus eveniet ad commodi dolorum ipsa fuga. Rerum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, sit hic!</p>
+          <br>
+          <p class="slideTwo__leftSide-name">- Lucia Ramazini -</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+
+  <div class="slideTwo">
+
+    <div class="slideTwo__content-wrapper">
+
+      <div class="slideTwo__leftSide">
+
+        <div class="slideTwo__leftSide-tittle">
+          <img src="media/testimonials/person-3.png" alt="">
+        </div>
+        
+        <div class="slideTwo__leftSide-info">
+            <p>Adipisicing elit. Sequi quae, voluptatibus aut iusto praesentium consequatur possimus sapiente deleniti rerum minus quod veniam eligendi ad ipsa excepturi maxime ut officia? Nisi?</p>
+            <br>
+            <p class="slideTwo__leftSide-name">- Karla Gomez -</p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<div class="buttonsTwo">
+
+<button id="nextTwo" class="buttonn"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+</div>
+
+
+
+
+<div class="wrapper">
+  <i id="left" class="fa-solid fa-angle-left"></i>
+  <ul class="carousel">
+    <li class="card">
+      <div class="img"><img src="media/products/produto-biotanixextreme1EN.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Extreme</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/img-goldimpact-2.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Impact Mask Gold</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produtos1-1.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Impact Mask</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/impactmaskshampoo3.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Impact Mask Shampoo</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produto-magichelp2.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Magic Help</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produto-RESTORING2021-4.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Restoring</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/biotanix-novoRepairMask1.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Repair Mask</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/biotanix-novoForceField2.webp" alt="img" draggable="false"></div>
+      <h2>Bio Tanix</h2>
+      <h3>Force Field</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/thermal.webp" alt="img" draggable="false"></div>
+      <h2>Thermal Complex</h2>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produto-maximus1.webp" alt="img" draggable="false"></div>
+      <h2>Maximus</h2>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/hydra.webp" alt="img" draggable="false"></div>
+      <h2>Hydra</h2>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/OXEI.webp" alt="img" draggable="false"></div>
+      <h2>Profit Of Color</h2>
+      <h3>OXI Cream</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produto-Po20201.webp" alt="img" draggable="false"></div>
+      <h2>Profit Of Color</h2>
+      <h3>Pó Descolorante</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produto-profitMatizadores5.webp" alt="img" draggable="false"></div>
+      <h2>Profit Of Color</h2>
+      <h3>Matizadores</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/kit-homecare.webp" alt="img" draggable="false"></div>
+      <h2>Profit Of Color</h2>
+      <h3>For Blond Hair</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/profit-coloracao2.webp" alt="img" draggable="false"></div>
+      <h2>Profit of Color</h2>
+      <h3>Coloring</h3>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/profitplex-novo1.webp" alt="img" draggable="false"></div>
+      <h2>Profit Plex</h2>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/produto-lavatorios1.webp" alt="img" draggable="false"></div>
+      <h2>Lavatórios</h2>
+      <span>+</span>
+    </li>
+    <li class="card">
+      <div class="img"><img src="media/products/flat175-img6.webp" alt="img" draggable="false"></div>
+      <h2>Flat Iron Premium</h2>
+      <span>+</span>
+    </li>
+    
+  </ul>
+  <i id="right" class="fa-solid fa-angle-right"></i>
+</div>
+
+
+
+
+
+
 
   <br>
   <br>
@@ -128,6 +378,8 @@
 
 <script src="scripts/nav.js"></script>
 <script src="scripts/slide.js"></script>
+<script src="scripts/testimonials.js"></script>
+<script src="scripts/products.js"></script>
 </body>
 
 </html>
