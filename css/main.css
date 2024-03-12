@@ -11,6 +11,7 @@
   --ff-text: "Roboto", sans-serif;
 
   --borders: 4px;
+  --space-btw:4rem;
 
   --almarai800: 800;
   --almarai700: 700;
@@ -24,8 +25,6 @@
   --fs-highlights: 1.2rem;
   --fs-text: 1.1rem;
 }
-
-
 * {
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
@@ -79,19 +78,13 @@ input::-webkit-inner-spin-button {
 
 /******************************************DEFAULTS*********************************************/
 /***********************************************************************************************/
-body,
-html {
+body, html {
   background: var(--snow-white);
   margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--negro-prime);
 }
 
