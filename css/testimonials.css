@@ -1,7 +1,10 @@
 .slideshow-container {
   position: relative;
-  background: -webkit-linear-gradient(to top, #480048, #C04848);
-  background: linear-gradient(to top, #480048, #C04848);
+  /* background: -webkit-linear-gradient(to top, #480048, #C04848);
+  background: linear-gradient(to top, #480048, #C04848); */
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to top, #78ffd6, #a8ff78);
+  background: linear-gradient(to top, #78ffd6, #a8ff78);
   padding: 2rem 0;
   margin-top: var(--space-btw);
 }
@@ -63,7 +66,7 @@
 .active, .dot:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-p {
+.mySlides p {
   font-style: italic;
 }
 .author {

@@ -90,6 +90,64 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+.parallax {
+  background-image: url("../media/about/prime-team-guatemala.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: var(--space-btw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 75px 5px rgba(0,0,0,0.75) inset;
+}
+.parallax__title{
+  background: rgba(191, 8, 17, 0.5);
+  padding: 3rem 5rem;
+  border-radius: var(--borders);
+  border: 1px solid rgb(191, 8, 17);
+}
+.parallax__title h2{
+  font-size: var(--fs-xs);
+  font-family: var(--ff-titles);
+  text-shadow: 1px 1px 0px #0c0c0c;
+  color: var(--snow-white);
+}
+.about__wrapper{
+  width: 100%;
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+.about__container{
+  width: 65%;
+  margin: 0 auto;
+}
+.about__container h2{
+  font-family: var(--ff-titles);
+  font-size: var(--fs-titles);
+  line-height: 100%;
+}
+/* .about__container-text{
+  padding: 2rem;
+  position: relative;
+} */
+
+.about__container p{
+  /* color: #bf0811; */
+
+}
+
+.about__container-underline{
+  width: 30%;
+  height: 5px;
+  background: var(--rojo-prime);
+  margin: 0.4rem 0 1.5rem 0;
+  border-radius: 50%;
+}
+
+
 /*******************************************MEDIAQUERIES*******************************************/
 /* .hithere {
   animation: hithere 1s ease infinite;
