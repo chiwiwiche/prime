@@ -36,7 +36,7 @@ form label{
 .footer__leftSide-social{
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     justify-content: space-between;
     align-items: center;
     width: 235px;
@@ -66,6 +66,11 @@ form label{
 .footer__centerSide{
     display: flex;
     flex-direction: column;
+    
+    
+}
+.lulu{
+    margin: 0 auto;
 }
 .footer__centerSide-country{
     display: flex;
@@ -126,8 +131,8 @@ form input{
     border: 1px solid #bdbdbd;
     border-radius: var(--borders);
     width: 100%;
-    min-width: 250px;
-    max-width: 455px;
+    min-width: 350px;
+    max-width: 576px;
 }
 form select{
     background: white;
@@ -139,8 +144,8 @@ form select{
     color: #bdbdbd;
     font-style: italic;
     width: 100%;
-    min-width: 250px;
-    max-width: 455px;
+    min-width: 350px;
+    max-width: 576px;
 }
 option:not(:first-of-type) {
     color: var(--negro-prime);
@@ -156,8 +161,8 @@ form textarea{
     border: 1px solid #bdbdbd;
     resize: vertical;
     width: 100%;
-    min-width: 250px;
-    max-width: 455px;
+    min-width: 350px;
+    max-width: 576px;
     margin-top: 1rem;
 }
 .send__button{
@@ -196,6 +201,13 @@ form textarea{
 @media (max-width: 576px) { /*1 REM padding*/
     footer{
         padding: 4rem 1rem;
+    }
+    .footer__leftSide-social{
+        width: 100%;
+    }
+    .footer__sides{
+        flex: none;
+        width: 100%;
     }
 
 }

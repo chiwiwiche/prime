@@ -1,0 +1,1 @@
+document.querySelector('.copyright').innerHTML = ("All right reserved. Prime Pro Extreme &#169; - Guatemala. " + new Date().getFullYear());
