@@ -5,18 +5,13 @@ footer{
     box-shadow: rgba(50, 50, 93, 0.25) 0px -13px 27px -5px, rgba(0, 0, 0, 0.3) 0px -8px 16px -8px;
     padding: 4rem 3rem;
 }
-.footer__wrapper{
-
-}
 .footer__container{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 }
-
-.footer__sides-division{
-    background: #bdbdbd;
-    width: 1px;
-    margin: 0 2rem;
+.footer__sides{
+    flex: 1 1 0;
 }
 form label{
     font-family: var(--ff-titles);
@@ -25,11 +20,7 @@ form label{
     margin-bottom: 0.3rem;
 }
 /***************************************/
-.footer__leftSide{
-    min-width: 400px;
-    width: 400px;
 
-}
 .footer__leftSide-container{
     display: flex;
     flex-direction: column;
@@ -67,7 +58,6 @@ form label{
 }
 .footer__leftSide-social a i{
     font-size: 1.3rem;
-
 }
 
 
@@ -76,7 +66,6 @@ form label{
 .footer__centerSide{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .footer__centerSide-country{
     display: flex;
@@ -97,7 +86,6 @@ form label{
     flex-direction: column;
     margin-left: 0.5rem;
     padding: 0.4rem 0 0.5rem 0.5rem;
-    
 }
 .country__info a{
     color: var(--negro-prime);
@@ -121,11 +109,6 @@ form label{
 }
 
 /***************************************/
-
-.footer__rightSide{
-    min-width: 400px;
-    width: 400px;
-}
 form{
     display: flex;
     flex-direction: column;
@@ -142,6 +125,9 @@ form input{
     outline: none;
     border: 1px solid #bdbdbd;
     border-radius: var(--borders);
+    width: 100%;
+    min-width: 250px;
+    max-width: 455px;
 }
 form select{
     background: white;
@@ -152,7 +138,9 @@ form select{
     border-radius: var(--borders);
     color: #bdbdbd;
     font-style: italic;
-    
+    width: 100%;
+    min-width: 250px;
+    max-width: 455px;
 }
 option:not(:first-of-type) {
     color: var(--negro-prime);
@@ -167,8 +155,59 @@ form textarea{
     outline: none;
     border: 1px solid #bdbdbd;
     resize: vertical;
+    width: 100%;
+    min-width: 250px;
+    max-width: 455px;
+    margin-top: 1rem;
 }
 .send__button{
     background: var(--rojo-prime);
     color: var(--snow-white);
+}
+
+
+@media (max-width: 1483px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1150px) {
+    .footer__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 950px) {/*2 REM padding*/
+    footer{
+        padding: 4rem 2rem;
+    }
+  
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) { /*1 REM padding*/
+    footer{
+        padding: 4rem 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 455px) {
+
+}
+
+@media (max-width: 350px) {
+
 }
